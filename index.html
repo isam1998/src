@@ -1,38 +1,168 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
        
             <meta charset="utf-8" >
           
             <link rel="stylesheet" href="style.css"/> 
             <title> JUST UNIVERSITY </title>
+            <script src="https://kit.fontawesome.com/4228988b78.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+        
+            <div class="first" >
+                <div class="icon">
+            <a href="https://www.facebook.com/isam.alhariri"><span><i class="fab fa-facebook" style="font-size:bold;"></i></span></a>
+            <a href="https://vigorous-yonath-b1cd72.netlify.app/"><span><i class="fas fa-laptop-code"  style="font-size:bold;"></i></span></a>
+            <a href="https://www.instagram.com/isam_alhariri/?fbclid=IwAR0xPrblNhLOtej6pq5ur4GBsqpUfS67gP45z8qxjyweM5KJaVCd72D6ELY"><span><i class="fab fa-instagram"style="font-size:bold;"></i></span></a>
+            </div></div>
+            <img src="just.jpg.png">
+            <h1>موقع حساب المعدل الفصلي لطلبة جامعة العلوم والتكنولوجيا</h1><br><br>
+            <p>Please Enter The Number of Hours : </p>
+            <input id="Numper" class="i"> 
+        
+      <br><br><label>Please Enter Your Grade :</label><br><br>
+   
+      
+      <input id="in" class="i" style="color:#555;">
+       <select id="ch">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select><button onclick="calculate()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="di"></span><br>
+        
+            <br <br><br><br>
+             
             
-            <style>
-                body{
-                    background-image:url('unnamed%20(2).jpg');
-                    background-size:cover;text-align:center;justify-content:center;
-                    font-style:normal;
-                    font-family:serif;
-                    padding:0;
-                    margin:0;
-                }
-                h1{padding-bottom:100px;text-align:center ; color:white;}
-                .one{text-align:center;justify-content:center;
-               margin-left:20%;margin-right:20%;color:white;font-size:24px;
-                }
-                .nn{margin:3%;border-radius:30px;border:2px solid white;opacity:0.7;justify-content:center;}
-                .first{width:580px;height:130px;margin-top:-14px;justify-content:center;
-            </style>
-        </head
-        <body>
-        <img class="first" src="just.jpg.png">
-            <h1 > عزيزي الطالب شرح تفصيلي ل كيفية حساب معدلك الفصلي </h1>
-           <div  class="one">
-            <div class="im"><h4>هنا في الخانة الأولى ندخل عدد ساعات الفصل المراد حساب   المعدل له</h4></div>
-            <img src="sh1.jpg.PNG" class="nn"><br>
-               <div class="im"><h4>هنا في الخانات التالية وعددها سبعة ندخل علامة المادة من 4.2 على سبيل المثال 3.5 وهكذا<br>أما بخصوص زر ستارت فلك حرية الاختيار حيث يظهر علامة المادة النهائية فقط</h4></div>
-              <img src="sh2.jpg.PNG" class="nn"><br>
-                 <div class="im"><h4> RATE  أما هنا وبعد ادخال كافة التفاصيل السابقة  سيظهر معدلك الفصلي عند الضغط على زر  </h4></div>
-                <img src="sh3.jpg.PNG" class="nn"><br>
+             <input id="input" class="i"style="color:#555;">
+       <select id="cho" >
+       <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select> <button onclick="cal()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div"></span><br>
+        
+           <br <br><br><br>
+          
+        <!-- three -->
+        
+        
+            <input id="input3" class="i" style="color:#555;">
+       <select id="chose3">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select><button onclick="three()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div3"></span><br>
+        
+            <br <br><br><br>
+            
+            
+            
+            <input id="input4" class="i" style="color:#555;">
+       <select id="chose4">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select> <button onclick="four()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div4"></span><br>
+        
+           <br <br><br><br>
+            
+            
+             
+            <input id="input5" class="i" style="color:#555;">
+       <select id="chose5">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select><button onclick="five()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div5"></span><br>
+        
+            <br <br><br><br>
+            
+            
+              <input id="input6" class="i" style="color:#555;">
+       <select id="chose6">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select> <button onclick="six()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div6"></span><br>
+        
+           <br <br><br><br>
+           
+           
+           
+            <input id="input7" class="i" style="color:#555;">
+       <select id="chose7">
+        <option value="1">1 Hour</option>
+         <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+           <option value="5">5 Hours</option>
+            <option value="6">6 Hours</option>
+             <option value="7">7 Hours</option>
+              <option value="8">8 Hours</option>
+           <option value="9">9 Hours</option>
+       </select><button onclick="saven()">start</button>
+        <br>
+          <span>your final grade is: </span><span id="div7"></span><br>
+        
+            <br <br><br><br>
+              
+         <button onclick="avg()" class="nn">My Rate</button>
+            <p>Your Rate is :  <span id="av">here</span></p><br><br>
+            
+             <div class="ani2">
+            <span class="vvv">JUST</span>
+             
            </div>
+        
+           <div class="finish"><div class="dev"> Developed By Isaam Al-hariri </div><div class="devl"> &copy 2021 Jordan University of Science and Technology.</div></div>
+
+            <script src="uni.js"></script>
         </body>
-        <body>
+    </html>
